@@ -1,0 +1,131 @@
+body {
+    background-image: url(../images/hand-drawn-question-mark-pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 60%; /* Increase the max-width for a larger container */
+    height: 400px; /* Increase the height for more space */
+    margin: 10% auto; /* Adjust margin for centering */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background color */
+    border-radius: 15px; /* Increase border-radius for rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increase box-shadow for a subtle shadow effect */
+  }
+  
+  .answer-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Add some space between container and answer-container */
+  }
+  
+  input {
+    text-align: center;
+    width: 90%; /* Increase the input width for better visibility */
+    margin: 5px auto; /* Adjust margin for better spacing */
+    padding: 12px; /* Increase padding for a more comfortable input area */
+    border: 2px solid #3498db; /* Blue border color */
+    border-radius: 8px; /* Increase border-radius for rounded input corners */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Light blue shadow on focus */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect on box-shadow */
+  
+  }
+  
+  input:focus {
+    outline: none; /* Remove default outline on focus */
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.5); /* Slightly darker shadow on focus */
+  }
+  
+  
+ 
+  
+  button {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: large;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #001f3f; /* Dark blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  button:hover {
+    background-color: #003366; /* Darker shade on hover for a cool effect */
+  }
+  
+  
+  .horizontal-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button:hover {
+    background-color: #f5f4ed;
+  }
+  
+  #result {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .checkmark {
+    color: transparent;
+    animation: checkmark 0.5s ease;
+  }
+  
+  .cross {
+    color: transparent;
+    animation: cross 0.5s ease;
+  }
+  
+  @keyframes checkmark {
+    0% {
+      color: transparent;
+    }
+    100% {
+      color: green;
+    }
+  }
+  
+  @keyframes cross {
+    0% {
+      color: transparent;
+    }
+    100% {
+      color: red;
+    }
+  }
+  
+  .restart-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
